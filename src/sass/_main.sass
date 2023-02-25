@@ -1,0 +1,89 @@
+.main
+	padding-top: 40px
+	&__img
+		position: absolute
+		top: -40px
+		left: -260px
+		z-index: -1
+	&__wrapper
+		display: flex
+		justify-content: flex-end
+	&__block
+		width: 715px
+	&__title
+		margin-top: 87px
+		span
+			font-weight: 800
+			font-size: 80.4124px
+			line-height: 105px
+			color: var(--main-color)
+	&__subblock
+		margin-top: 35px
+		margin-left: 187px
+	&__btn 
+		margin-top: 45px
+	&__info 
+		margin-top: 74px
+		display: flex
+		&-elem:nth-child(1)
+			margin-right: 102px
+		&-figure 
+			font-weight: 700
+			font-size: 43px
+			line-height: 60px
+			color: var(--main-color)
+		&-text
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 29px
+			color: #081800;
+			opacity: 0.7;
+
+.header
+	display: flex
+	align-items: center 
+	justify-content: space-between
+	&__logo
+		cursor: pointer
+	&__menu
+		display: flex
+		justify-content: space-between
+		align-content: center
+		align-items: center
+		width: 540px
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			display: flex
+			justify-content: space-between
+			width: 264px
+		&-link
+			position: relative
+			font-weight: 700
+			font-size: 18px
+			line-height: 23px
+			opacity: 0.6
+			cursor: pointer
+			transition: .3s all
+			a
+				color: #101C02
+				text-decoration: none
+		&-link:first-child
+			opacity: 1
+			a
+				color: #418A1C
+		&-link:hover
+			opacity: 1
+		&-link:first-child:before
+			content: ''
+			position: absolute
+			display: block
+			width: 0%
+			height: 3px
+			top: 22px
+			background: var(--main-color)
+			transition: .3s all
+		&-link:first-child:hover
+			&:before
+				width: 100%
