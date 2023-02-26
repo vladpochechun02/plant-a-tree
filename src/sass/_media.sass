@@ -1,0 +1,127 @@
+@media (max-width: 1199px) 
+	.container
+		max-width: 960px
+	.title
+		font-size: 50px
+	.main
+		&__img
+			left: -200px
+		&__block
+			width: 525px
+		&__title
+			span
+				font-size: 60px
+		&__subblock
+			margin-left: 130px
+		&__info
+			margin-top: 47px
+	.header
+		&__menu
+			&-link:first-child a
+				font-size: 18px
+				color: #000
+			&-link:first-child:before
+				background: #000
+		
+
+@media (max-width: 991px) 
+	.container
+		max-width: 720px
+	.btn
+		box-shadow: 6px 6px 0px #51C815
+		&:hover
+			background: #081800
+			box-shadow: 6px 6px 0px #51C815
+	.title
+		font-size: 40px
+		line-height: 65px
+	.header__menu
+		display: none
+	.hamburger
+		opacity: 1
+		visibility: visible
+	.main
+		&__img
+			display: none
+			left: -210px
+			&-767
+				display: block
+		&__block
+			width: 400px
+		&__title
+			text-align: center
+			span
+				font-size: 50px
+				line-height: 70px
+		&__subblock
+			margin-left: 130px
+		&__subblock
+			margin-left: 40px
+		&__info
+			margin-top: 45px
+			// position: relative
+			// left: 50%
+			// transform: translateX(-50%)
+
+
+@media (max-width: 767px) 
+	.container
+		max-width: 540px
+	.title
+		font-size: 40px
+		line-height: 45px
+	.text
+		font-size: 16px
+	.menu
+		&__link
+			a
+				font-size: 23px
+	.main
+		min-height: 755px 
+		&__img
+			display: none
+			left: -300px
+			&-767
+				display: none
+			&-575
+				display: block
+		&__block
+			width: 420px
+		&__title
+			text-align: center
+			span
+				font-size: 45px
+				line-height: 70px
+		&__subblock
+			margin-left: 130px
+		&__subblock
+			margin-left: 40px
+
+@media (max-width: 575px) 
+	.container
+		max-width: 100%
+		padding: 0 15px	
+	.text
+		line-height: 25px
+		opacity: .8
+	.main 
+		&__img
+			left: -350px
+		&__title
+			margin-top: 65px
+			span
+				line-height: 57px
+	.menu
+		width: 80%
+		&__link
+			a
+				font-size: 20px
+
+@media (max-width: 470px) 
+	.container
+		max-width: 100%
+		padding: 0 10px	
+	.main
+		&__img
+			left: -380px
+	
