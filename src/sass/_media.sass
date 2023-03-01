@@ -38,7 +38,15 @@
 		&__right
 			&-block
 				width: 436px
-		
+	.initiative
+		&__wrapper
+			justify-content: center
+	.video
+		&__wrapper
+			justify-content: center
+		&__logo
+			&:last-child
+				margin-bottom: 60px
 
 @media (max-width: 991px) 
 	.container
@@ -78,9 +86,18 @@
 			margin-left: 40px
 		&__info
 			margin-top: 45px
-			// position: relative
-			// left: 50%
-			// transform: translateX(-50%)
+	.video
+		&__circle
+			&-big 
+				&:hover
+					height: 68px
+					width: 68px
+			&-midle
+				&:hover
+					height: 68px
+					width: 68px
+
+	
 
 
 @media (max-width: 767px) 
@@ -90,8 +107,8 @@
 		font-size: 40px
 		line-height: 45px
 	.title_fz57
-		font-size: 37px
-		line-height: 42px
+		font-size: 35px
+		line-height: 45px
 	.text
 		font-size: 16px
 		opacity: .8
@@ -132,6 +149,7 @@
 	.text
 		line-height: 25px
 	.main 
+		padding-top: 20px
 		&__img
 			left: -350px
 		&__title
@@ -152,6 +170,12 @@
 		&__left
 			&-block 
 				width: 100%
+	.initiative
+		&__elem
+			&-img
+				width: 33px
+		&__img
+			width: 100%
 
 @media (max-width: 470px) 
 	.container
@@ -160,4 +184,13 @@
 	.main
 		&__img
 			left: -380px
+	.video
+		&__block
+			&-left 
+				width: 100%
+			&-right 
+				width: 100%
+		&__img 
+			width: 100%
+
 	

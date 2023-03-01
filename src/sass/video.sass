@@ -1,0 +1,64 @@
+.video
+    padding-top: 130px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__block
+        &-left 
+            width: 499px
+        &-right
+            width: 528px
+    &__logo
+        position: relative
+        &:first-child
+            margin-bottom: 40px
+        &:last-child
+            margin-top: 60px
+            margin-bottom: 0px
+        &-img 
+            position: absolute
+            left: 55%
+            top: 50%
+            transform: translateX(-50%) translateY(-50%)
+    &__circle
+        &-big
+            position: absolute
+            // width: 126px
+            // height: 126px
+            width: 68px
+            height: 68px
+            background: rgba(255, 255, 255, 0.3)
+            // opacity: 0.5
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            border-radius: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: .3s all
+            &:hover
+                width: 126px
+                height: 126px
+        &-midle 
+            // width: 96px
+            // height: 96px
+            width: 68px
+            height: 68px
+            background: rgba(255, 255, 255, 0.5)
+            border-radius: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: .3s all
+            &:hover
+                width: 96px
+                height: 96px
+        &-small
+            position: relative
+            width: 68px
+            height: 68px
+            background: #FFFFFF
+            border-radius: 100%
+            border: none
