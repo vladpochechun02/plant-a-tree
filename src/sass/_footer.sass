@@ -1,6 +1,6 @@
 .footer
     padding: 100px 0
-    height: 370px
+    min-height: 370px
     background: #F7FFEC
     overflow: hidden
     position: relative
@@ -10,3 +10,53 @@
         right: 0
         bottom: 0
         z-index: 1
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        // width: 1014px
+        position: relative
+        z-index: 10
+    &__logo
+        width: 160px
+    &__menu
+        list-style-type: none
+        margin: 0
+        padding: 0
+        li
+            margin-bottom: 16px
+            &:last-child
+                margin-bottom: 0
+            a
+                text-transform: uppercase
+                text-shadow: none
+                text-decoration: none
+                transition: .3s
+                &:hover
+                    opacity: 1
+    &__social
+        margin-top: 15px
+        display: flex
+        justify-content: center
+        align-items: center
+        &-text
+            text-transform: uppercase
+            text-shadow: none
+            text-decoration: none
+            color: #081800
+        &-item 
+            background: #000
+            height: 37px
+            width: 37px
+            border-radius: 100%
+            display: inline-flex
+            justify-content: center
+            align-items: center
+            margin-right: 12px
+            transition: .5s all
+            &:last-child
+                margin-right: 0
+            &:hover
+                // background: var(--main-color)
+                opacity: .8
+                transform: rotate(360deg) scale(1.03)
