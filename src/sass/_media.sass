@@ -58,6 +58,12 @@
 				margin-bottom: 40px
 			&-third
 				margin-top: 30px
+	.footer
+		&__wrapper
+			justify-content: space-around
+		&__logo
+			&-hide
+				display: none
 
 
 @media (max-width: 991px) 
@@ -112,8 +118,14 @@
 		&__block
 			&-third
 				padding: 30px 35px 35px 30px;
-
-	
+	.footer
+		&-sub
+			opacity: 1
+		&__social
+			&-item 
+				&:hover
+					opacity: 1
+					transform: rotate(0deg) scale(1)
 
 
 @media (max-width: 767px) 
@@ -161,13 +173,13 @@
 @media (max-width: 575px) 
 	.container
 		max-width: 100%
-		padding: 0 15px	
+		padding: 0 10px	
 	.text
 		line-height: 25px
 	.main 
 		padding-top: 20px
 		&__img
-			left: -350px
+			left: -380px
 		&__title
 			margin-top: 65px
 			span
@@ -192,22 +204,6 @@
 				width: 33px
 		&__img
 			width: 100%
-
-@media (max-width: 470px) 
-	.container
-		max-width: 100%
-		padding: 0 10px	
-	.main
-		&__img
-			left: -380px
-	.video
-		&__block
-			&-left 
-				width: 100%
-			&-right 
-				width: 100%
-		&__img 
-			width: 100%
 	.get
 		.title 
 			&__small
@@ -229,5 +225,31 @@
 				height: 470px
 				justify-content: center	
 		&__info
-			margin-top: 20px
+			margin-top: 20px		
+	.video
+		&__block
+			&-left 
+				width: 100%
+			&-right 
+				width: 100%
+		&__img 
+			width: 100%
+	.footer 
+		&__block 
+			width: 140px
+			&:last-child
+				width: 180px
+		&-title
+			font-size: 16px
+			display: block
+			text-align: center
+		&-sub 
+			font-size: 14px
+			display: block
+			text-align: center
+
+@media (max-width: 470px) 
+	.container
+		max-width: 100%
+		padding: 0 10px	
 	
